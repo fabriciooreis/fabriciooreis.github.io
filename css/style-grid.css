@@ -158,16 +158,45 @@
     .tools, .about-me h1{
         display: none;
     }
-    
-    
-    
-    /* END-ABOUT-ME */
-    
 }
 
 @media(min-width: 40.06em) and (max-width: 62.9375em){
     .container{
         display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas: 
+            "bio   bio   about   about   about"
+            "bio   bio   about   about   about"
+            "bio   bio   about   about   about"
+            "bio   bio   about   about   about"
+            "bio   bio   about   about   about"
+        ;
+    }
+    .my-bio{
+        grid-area: bio;
+        display: flex;
+        justify-content: flex-start;
+        padding-top: 3em;
+    }
+    .about-me{
+        grid-area: about;
+        padding-top: 3em;
+
+    }
+    .about-me h1{
+        display:none;
+    }
+    .container-skills{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .box-skills{
+        align-self: center;
+        min-width: 45%;
+        max-width: 45%;
+        height: auto;
+        min-height: 170px;
     }
 }
 
