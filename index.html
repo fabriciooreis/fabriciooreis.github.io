@@ -12,13 +12,95 @@
     <!-- Dev Icons Fonts -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <!-- Css do projeto -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-grid.css">
 </head>
 <body>
-    <h1>Fabricio Reis</h1>
+   <main class="container">
 
-    <ion-icon name="heart"></ion-icon>
-    <i class="devicon-debian-plain colored"></i>
+       <aside class="my-bio">
+
+           <h1>Fabricio Reis</h1>
+           <img id="photo" src="img/Fabricio.jpeg" alt="Fabricio Reis">
+           <p>Olá, meu nome é Fabricio Reis e atualmente sou <span class="span">Desenvolvedor front-end</span> rumo ao <span class="span">FullStack</span></p>
+           <p id="welcome">Seja Bem-vindo!</p>
+
+           <ul class="social-media">
+                <li><a href="#" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                <li><a href="#" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                <li><a href="#" target="_blank"><ion-icon name="logo-discord"></ion-icon></a></li>
+           </ul>
+
+           <div class="email">
+                <ion-icon name="mail-open-outline"></ion-icon>
+                <a href="mailto:fabriciooreis@gmail.com" target="_blank">fabriciooreis@gmail.com</a>
+           </div>
+
+       </aside>
+
+       <aside class="tools">
+
+       </aside>
+
+       <section class="about-me">
+
+           <h1 class="name">Fabricio Reis</h1>
+           <p id="title"><span class="span">Desenvolvedor Front-end</span></p>
+
+           <p class="description">
+               Sou desenvolvedor, apaixonado por tecnologia e inovação. Essa foi a área onde me encontrei e dedico uma parcela
+               do meu tempo todos os dias, entre estudo e prática, para melhorar cada dia mais e escrever códigos de qualidade.
+           </p>
+
+           <a href="#" id="see-more">
+               <ion-icon name="share-social-outline"></ion-icon>
+               <span>Ver Projetos</span>
+           </a>
+
+           <h2 class="title-skills">Minhas Skills</h2>
+           <p class="description">Tecnologias que trabalho:</p>
+
+           <div class="container-skills">
+
+                <div class="box-skills">
+                    <p class="box-title-skills">Front-end</p>
+                    <i class="devicon-html5-plain colored"></i>
+                    <i class="devicon-css3-plain colored"></i>
+                    <i class="devicon-javascript-plain colored"></i>
+                    
+                </div>
+
+                <div class="box-skills">
+                    <p class="box-title-skills">Banco de dados</p>
+                    <i class="devicon-mysql-plain colored"></i>
+                    <i class="devicon-postgresql-plain colored"></i>
+                </div>
+
+                <div class="box-skills">
+                    <p class="box-title-skills">Sistema Operacional</p>
+                   
+                    <i class="devicon-debian-plain colored"></i>
+                    <i class="devicon-ubuntu-plain colored"></i>
+                </div>
+
+                <div class="box-skills">
+                    <p class="box-title-skills">Finalizando estudos</p>
+                    <i class="devicon-react-original colored"></i>
+                    <i class="devicon-nestjs-plain colored"></i>
+                    <i class="devicon-git-plain colored"></i>
+                    <i class="devicon-github-original"></i>
+                </div>
+
+                <div class="box-skills">
+                    <p class="box-title-skills">Iniciando estudos</p>
+                    <i class="devicon-nodejs-plain colored"></i>
+                    <i class="devicon-sass-original colored"></i>
+                    <i class="devicon-docker-plain colored"></i>
+                </div>
+
+           </div>
+
+       </section>
+   </main>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

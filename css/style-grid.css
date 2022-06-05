@@ -1,0 +1,179 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Variables */
+:root{
+    --main-color:#54B689;
+    --main-txt-color:#FFF;
+    --border-color:#999;
+    --bio-bg-color:#12131b;
+    --bio-border-color:#3b3d49;
+    --about-bg-color:#232533;
+    --tools-bg-color:#313445;
+}
+/* GENERAL */
+/* CONTAINER */
+.container{
+    min-width: 300px;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+/* END-CONTAINER */
+
+/* MY BIO */
+.my-bio{
+    height: auto;
+    background-color: var(--bio-bg-color);
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1em
+}
+    .my-bio h1{
+        font-size: 2em;
+        color: var(--main-txt-color);
+    }
+    /* Photo */
+    #photo{
+        width: 175px;
+        height: 175px;
+        border-radius: 50%;
+        margin: 1em 0;;
+    }
+    /* Palavras em destaque */
+    .span{
+        color: var(--main-color);
+    }
+    .my-bio p{
+        color: var(--main-txt-color);
+        margin-bottom: .5em;
+    }
+    #welcome{
+        font-size: 1.5em;
+        margin-top: .5em;
+        font-weight: bold;
+    }
+    .social-media{
+        display:flex;
+        min-width: 100px;
+        justify-content: space-between;
+        padding: .5em 0;
+    }
+    .social-media li{
+        list-style: none;
+    }
+    .social-media ion-icon{
+        font-size: 1.5em;
+        color: var(--main-color);
+    }
+    .email{
+        display: flex;
+        padding: .6em;
+        color: var(--main-txt-color);
+    }
+    .email ion-icon{
+        padding-right: 5px;
+    }
+    .email a{
+        text-decoration: none;
+        color: var(--main-txt-);
+    }
+/* END MY-BIO */
+
+/* ABOUT-ME */
+.about-me{
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    align-items: center;
+    justify-content:center;
+    background-color: var(--about-bg-color);
+    color: var(--main-txt-color);
+}
+    #title{
+        font-size: 1.5em;
+        margin-bottom:.5em;
+        font-weight: bold;
+    }
+    .about-me .description{
+        margin-bottom: 1em;
+    }
+    #see-more{
+        background-color: var(--main-color);
+        padding: .6em;
+        border-radius: 5px;
+        text-decoration: none;
+        margin-bottom: 2em;
+        color: var(--main-txt-color);
+        font-size: .8;
+        font-weight: 600;
+    }
+    #see-more ion-icon{
+        font-size: 1em;
+    }
+    .title-skills{
+        margin-bottom:.5em;
+    }
+    .container-skills{
+        display: flex;
+        flex-direction: column;
+        min-width: 300px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+        /* BOX-SKILLS */
+        .box-skills{
+            width: 100%;
+            height: auto;
+            background-color: var(--bio-bg-color);
+            padding: 15px;
+            text-align: center;
+            margin: 10px;
+        }
+        .box-skills i{
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+            .box-title-skills{
+                font-size: 1.5em;
+                padding: 0 10px 0 0;
+            }
+
+    /* END BOX-SKILLS */
+    
+/* END ABOUT-ME */
+
+/* MEDIA QUERY SMALL */
+@media(max-width: 40em){
+    .tools, .about-me h1{
+        display: none;
+    }
+    
+    
+    
+    /* END-ABOUT-ME */
+    
+}
+
+@media(min-width: 40.06em) and (max-width: 62.9375em){
+    .container{
+        display: grid;
+    }
+}
+
+@media(min-width:62.938em){
+    .container{
+        background-color: var(--border-color);
+    }
+}
+
+
